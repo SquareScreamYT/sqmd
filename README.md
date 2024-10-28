@@ -189,14 +189,14 @@ You can also use colons to align the columns:
 | :----------- | :------------: | ------------: |
 | Left         | Center         | Right         |
 
-You can merge cells by using a backslash followed by w, a, s and d for merging up, left, down and right:
+You can add to the column and row span by using `\k` for row span and `\l` for column span:
 
 ```
 | Column 1 | Column 2 | Column 3 |
 | -------- | -------- | -------- |
-| \s       | \d       | Row 1    |
-| Row 2    | Row 2    | Row 2    |
-| Row 3    | \a       | \w       |
+| Row 1    | Row 1 \l            |
+| Row 2    | Row 2    | Row 2 \k |
+| Row 3    | Row 3    |          |
 ```
 
 <table>
@@ -206,19 +206,21 @@ You can merge cells by using a backslash followed by w, a, s and d for merging u
     <td><b>Column 3</b></td>
   </tr>
   <tr>
-    <td rowspan=2>Row 2</td>
+    <td >Row 1</td>
     <td colspan=2>Row 1</td>
   </tr>
   <tr>
+    <td >Row 2</td>
     <td>Row 2</td>
     <td rowspan=2>Row 2</td>
   </tr>
   <tr>
-    <td colspan=2>Row 3</td>
+    <td>Row 3</td>
+    <td>Row 3</td>
   </tr>
 </table>
 
-Note that the data displayed in the table is the one being merged into (the one without the backslash).
+Remember to leave a blank where the extra cell would be.
 
 ## Task List
 
