@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="github-markdown.css" />
+    <style>
+      .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+
+      body {
+        background-color: #0d1117;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="markdown-body">
+      <h1 id="sqs-markdown">sq&#39;s Markdown</h1>
+      <h2 id="headings">Headings</h2>
+      <p>Headings in sqmd are the same as in Markdown:</p>
+      <pre><code># Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+</code></pre>
+      <h1 id="heading-1">Heading 1</h1>
+      <h2 id="heading-2">Heading 2</h2>
+      <h3 id="heading-3">Heading 3</h3>
+      <h4 id="heading-4">Heading 4</h4>
+      <h5 id="heading-5">Heading 5</h5>
+      <h6 id="heading-6">Heading 6</h6>
+      <h2 id="text-formatting">Text Formatting</h2>
+      <p>Text formatting in sqmd is the same as in Markdown:</p>
+      <pre><code>*Italic*
+**Bold**
+~~Strikethrough~~
+_Underline_
+</code></pre>
+      <p>
+        <em>Italic</em><br />
+        <strong>Bold</strong><br />
+        <del>Strikethrough</del><br />
+        <u>Underline</u>
+      </p>
+      <hr />
+      <p>To highlight text, use surround your text with 2 equal signs:</p>
+      <pre><code>==Highlighted Text==
+</code></pre>
+      <p><mark>Highlighted Text</mark></p>
+      <hr />
+      <p>To make it so that your sentence doesn&#39;t create a new line, use a \ at the end of the line.</p>
+      <pre><code>This is the first line.\
+This is the second line.
+</code></pre>
+      <p>This is the first line. This is the second line.</p>
+      <h2 id="horizontal-lines">Horizontal Lines</h2>
+      <p>To make a horizontal line, use three dashes:</p>
+      <hr />
+      <h2 id="code-blocks">Code Blocks</h2>
+      <p>To create a code block, use three backticks:</p>
+      <pre><code>```
+Code Block
+```
+
+`Code Block` within a sentence
+
+````
+```
+Code Block inside a code block
+```
+````
+</code></pre>
+      <pre><code>Code Block
+</code></pre>
+      <p><code>Code Block</code> within a sentence</p>
+      <pre><code>```
+Code Block inside a code block
+```
+</code></pre>
+      <h2 id="block-quotes">Block Quotes</h2>
+      <p>To create a block quote, use a greater than symbol:</p>
+      <pre><code>&gt; Block Quote
+&gt; &gt; More Block Quote
+</code></pre>
+      <blockquote>
+        <p>Block Quote</p>
+        <blockquote>
+          <p>More Block Quote</p>
+        </blockquote>
+      </blockquote>
+      <h2 id="lists">Lists</h2>
+      <p>To create a list, use dashes or numbers:</p>
+      <pre><code>- Item
+- Item
+  - Item
+  - Item
+- Item
+
+1. Item 1
+2. Item 2
+  a. Item 2a
+  b. Item 2b
+3. Item 3
+</code></pre>
+      <ul>
+        <li>Item</li>
+        <li>
+          Item
+          <ul>
+            <li>Item</li>
+            <li>Item</li>
+          </ul>
+        </li>
+        <li>Item</li>
+      </ul>
+      <ol>
+        <li>Item 1</li>
+        <li>
+          Item 2<br />
+          a. Item 2a<br />
+          b. Item 2b
+        </li>
+        <li>Item 3</li>
+      </ol>
+      <h2 id="links">Links</h2>
+      <p>To create a link, use square brackets for the text and parentheses for the link:</p>
+      <pre><code>[Link](https://example.com)
+</code></pre>
+      <p><a href="https://example.com">Link</a></p>
+      <h2 id="images">Images</h2>
+      <p>To create an image, use an exclamation point, square brackets for the alt text, and parentheses for the link, and curly brackets for the size:</p>
+      <pre><code>![sq button](/sq_button.svg){200,100}
+</code></pre>
+      <img src="https://raw.githubusercontent.com/SquareScreamYT/SquareScreamYT.github.io/refs/heads/main/sq_button.svg" alt="sq button" width="200" height="100" />
+
+      <h2 id="tables">Tables</h2>
+      <p>To create a table, use pipes to separate columns and dashes to separate rows:</p>
+      <pre><code>| Column 1 | Column 2 | Column 3 |
+| -------- | -------- | -------- |
+| Row 1    | Row 1    | Row 1    |
+| Row 2    | Row 2    | Row 2    |
+| Row 3    | Row 3    | Row 3    |
+</code></pre>
+      <table>
+        <thead>
+          <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Row 1</td>
+            <td>Row 1</td>
+            <td>Row 1</td>
+          </tr>
+          <tr>
+            <td>Row 2</td>
+            <td>Row 2</td>
+            <td>Row 2</td>
+          </tr>
+          <tr>
+            <td>Row 3</td>
+            <td>Row 3</td>
+            <td>Row 3</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>You can also use colons to align the columns:</p>
+      <pre><code>| Left Aligned | Center Aligned | Right Aligned |
+| :----------- | :------------: | ------------: |
+| Left         | Center         | Right         |
+</code></pre>
+      <table>
+        <thead>
+          <tr>
+            <th align="left">Left Aligned</th>
+            <th align="center">Center Aligned</th>
+            <th align="right">Right Aligned</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left">Left</td>
+            <td align="center">Center</td>
+            <td align="right">Right</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>You can merge cells by using a backslash followed by w, a, s and d for merging up, left, down and right:</p>
+      <pre><code>| Column 1 | Column 2 | Column 3 |
+| -------- | -------- | -------- |
+| \s       | \d       | Row 1    |
+| Row 2    | Row 2    | Row 2    |
+| Row 3    | \a       | \w       |
+</code></pre>
+      <table>
+        <tr>
+          <td><b>Column 1</b></td>
+          <td><b>Column 2</b></td>
+          <td><b>Column 3</b></td>
+        </tr>
+        <tr>
+          <td rowspan="2">Row 2</td>
+          <td colspan="2">Row 1</td>
+        </tr>
+        <tr>
+          <td>Row 2</td>
+          <td rowspan="2">Row 2</td>
+        </tr>
+        <tr>
+          <td colspan="2">Row 3</td>
+        </tr>
+      </table>
+
+      <p>Note that the data displayed in the table is the one being merged into (the one without the backslash).</p>
+      <h2 id="task-list">Task List</h2>
+      <p>To create a task list, use a dash followed by a space and a bracket:</p>
+      <pre><code>- [ ] Task
+- [x] Completed Task
+</code></pre>
+      <ul>
+        <li><input disabled="" type="checkbox" /> Task</li>
+        <li><input checked="" disabled="" type="checkbox" /> Completed Task</li>
+      </ul>
+      <h2 id="subscripts-and-superscripts">Subscripts and Superscripts</h2>
+      <p>To create a subscript, use a tilde followed by the text:</p>
+      <pre><code>H~2~O
+</code></pre>
+      <p>H<sub>2</sub>O</p>
+      <p>To create a superscript, use a caret followed by a text:</p>
+      <pre><code>x^2^
+</code></pre>
+      <p>x<sup>2</sup></p>
+      <h2 id="definition-list">Definition List</h2>
+      <p>To create a definition list, use a colon followed by a space and the definition:</p>
+      <pre><code>Term 1
+: Definition 1
+
+Term 2
+: Definition 2
+</code></pre>
+      <dl>
+        <dt>Term 1</dt>
+        <dd>Definition 1</dd>
+
+        <dt>Term 2</dt>
+        <dd>Definition 2</dd>
+      </dl>
+
+      <h2 id="emoji">Emoji</h2>
+      <p>To create an emoji, use a colon followed by the name of the emoji:</p>
+      <pre><code>:smile:
+:apple:
+:books:
+</code></pre>
+      <p>
+        😄<br />
+        🍎<br />
+        📚
+      </p>
+      <h2 id="colors">Colors</h2>
+      <p>To set a text to a color, use <code>\c</code> followed by a hexcode, and then <code>\e</code>:</p>
+      <pre><code>\c#ff6347\eThis red is really nice
+</code></pre>
+      <p><span style="color: #ff6347;">This red is really nice</span></p>
+      <p>To set the highlight color, use <code>\h</code> followed by a hexcode, and then <code>\e</code>:</p>
+      <pre><code>\h#ff6347\eIt looks like the color of a tomato
+</code></pre>
+      <p><mark style="background-color: #ff6347;">It looks like the color of a tomato</mark></p>
+      <p>To reset the color, use <code>\r</code>:</p>
+      <pre><code>\c#ff6347\eRed\r White
+</code></pre>
+      <p><span style="color: #ff6347;">Red</span> <span style="color: #ffffff;">White</span></p>
+      <h2 id="abbreviations">Abbreviations</h2>
+      <p>To create an abbreviation, use an asterisk followed by square brackets surrounding the abbreviation, and then a colon followed by the full name:</p>
+      <pre><code>*[MD]: MarkDown
+</code></pre>
+      <p><abbr title="MarkDown">MD</abbr></p>
+      <h2 id="comments">Comments</h2>
+      <p>Comments in sqmd are the same as in Javascript:</p>
+      <pre><code>// This is a single line comment
+
+/*
+This is a
+multi-line
+comment
+*/
+</code></pre>
+      <p>Comments are not displayed in the output.</p>
+      <h2 id="default-colors">Default Colors</h2>
+      <p>To add default colors, use <code>/* */</code> at the start of the file:</p>
+      <pre><code>/*
+  background-color:#0d1117,
+  text-color:#dadfda,
+  highlight-color:#272115,
+  code-color:#151b23,
+  link-color:#0000ee
+*/
+</code></pre>
+      <p>This will change the default colors to of the output.</p>
+      <h2 id="footnotes">Footnotes</h2>
+      <p>To create a footnote, use a caret followed by a number:</p>
+      <pre><code>Here is a footnote[^1]
+
+[^1]: This is the footnote
+</code></pre>
+      <p id="textnote">Here is a footnote<sup><a href="#footnote">[1]</a></sup></p>
+      <hr />
+      <h6 id="footnote">1. This is the footnote <a href="#textnote">↩︎</a></h6>
+    </article>
+  </body>
+</html>
