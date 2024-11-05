@@ -34,7 +34,7 @@
     fetch('https://raw.githubusercontent.com/SquareScreamYT/sqmd/master/README.md')
       .then(response => response.text())
       .then(markdown => {
-        document.getElementById('markdown-body').innerHTML = marked.parse(markdown);
+        document.getElementById('markdown-body').innerHTML = "<div>"+marked.parse(markdown)+"</div>;
       })
       .catch(error => console.error('Error fetching markdown:', error));
   </script>
